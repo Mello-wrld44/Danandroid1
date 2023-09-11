@@ -1,5 +1,6 @@
 package com.example.mello_wrld
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -25,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.node.modifierElementOf
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
@@ -46,6 +48,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun demo() {
+
+    val mContext= LocalContext.current
+
     Column(modifier = Modifier
         .fillMaxSize()
         .padding(20.dp)) {
@@ -106,7 +111,7 @@ fun demo() {
             Text(text = "No",
                  fontSize = 30.sp)
         }
-            Button(onClick = { /*TODO*/ },
+            Button(onClick = { mContext.startActivity(Intent(mContext,Formactivity::class.java)) },
             shape = RectangleShape,
             colors = ButtonDefaults.buttonColors(Color.Magenta)) {
                 Text(text = "Click Me")
@@ -127,6 +132,18 @@ fun demo() {
             colors = ButtonDefaults.outlinedButtonColors()
         ) {
             Text(text = "Bordered button")
+
+        }
+
+        Spacer(modifier = Modifier.height(100.dp))
+        //intent
+        Button(onClick = {
+                         mContext.startActivity(Intent(mContext,LottiAnimationActivity::class.java))
+        },
+            shape = CutCornerShape(5.dp),
+            colors = ButtonDefaults.buttonColors(Color.Green),
+            modifier = Modifier.padding(start = 150.dp)) {
+            Text(text = "Next")
 
         }
 

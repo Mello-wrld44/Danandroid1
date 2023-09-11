@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">Mello_wrld</string>
     <string name="title_activity_imageactivity">imageactivity</string>
+    <string name="title_activity_scrollactivity">scrollactivity</string>
+    <string name="title_activity_formactivity">Formactivity</string>
+    <string name="title_activity_intentactivity">Intentactivity</string>
+    <string name="title_activity_practical">PracticalActivity</string>
+    <string name="title_activity_splashscreen">SplashscreenActivity</string>
+    <string name="title_activity_scroll">ScrollActivity</string>
+    <string name="title_activity_practicalactivity2">Practicalactivity2</string>
+    <string name="title_activity_intent2">IntentActivity2</string>
+    <string name="title_activity_lotti">LottiActivity</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="title_activity_intent">IntentActivity</string>
+    <string name="title_activity_lottie_animation">LottieAnimationActivity</string>
+    <string name="title_activity_homepage">HomepageActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
 </resources>

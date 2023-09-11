@@ -13,14 +13,34 @@
         android:theme="@style/Theme.Mello_wrld"
         tools:targetApi="31">
         <activity
-            android:name=".imageactivity"
+            android:name=".LocationActivity"
             android:exported="false"
-            android:label="@string/title_activity_imageactivity"
+            android:label="@string/title_activity_location"
             android:theme="@style/Theme.Mello_wrld" />
         <activity
-            android:name=".MainActivity"
+            android:name=".HomepageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_homepage"
+            android:theme="@style/Theme.Mello_wrld" />
+        <activity
+            android:name=".LottiAnimationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lottie_animation"
+            android:theme="@style/Theme.Mello_wrld" />
+        <activity
+            android:name=".PracticalActivity"
+            android:exported="false"
+            android:label="mello-wrld"
+            android:theme="@style/Theme.Mello_wrld" />
+        <activity
+            android:name=".ScrollActivity"
+            android:exported="false"
+            android:label="@string/title_activity_scroll"
+            android:theme="@style/Theme.Mello_wrld" />
+        <activity
+            android:name=".SplashscreenActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="Mello_wrld"
             android:theme="@style/Theme.Mello_wrld">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +48,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Intentactivity"
+            android:exported="false"
+            android:label="@string/title_activity_intentactivity"
+            android:theme="@style/Theme.Mello_wrld" />
+        <activity
+            android:name=".Formactivity"
+            android:exported="false"
+            android:label="@string/title_activity_formactivity"
+            android:theme="@style/Theme.Mello_wrld" />
+        <activity
+            android:name=".imageactivity"
+            android:exported="false"
+            android:label="@string/title_activity_imageactivity"
+            android:theme="@style/Theme.Mello_wrld" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="MainActivity"
+            android:theme="@style/Theme.Mello_wrld" />
     </application>
 
 </manifest>
